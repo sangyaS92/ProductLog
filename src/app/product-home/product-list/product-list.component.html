@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+    
+        <div class="col-md-4" *ngFor="let product of productlist">
+        
+            
+                <div class="card border-info mb-3" style="width: 18rem;">
+                   
+                    <app-productitem [product]="product"></app-productitem>
+                  </div>
+            
+            
+            
+        </div>
+    </div>
+    </div>

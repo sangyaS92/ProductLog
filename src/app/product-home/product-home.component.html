@@ -1,0 +1,22 @@
+<div class="container">
+    
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <span class="navbar-text font-weight-bold">
+            Product Log
+          </span>
+        <form class="form-inline">
+            <select class="form-control mr-sm-2" (change)="valueSelected($event.target.value)">
+                <option value="All">All</option>
+                <option *ngFor="let item of categorylist">{{ item }}</option>
+            </select>
+        </form>
+      </nav>  
+   
+    <div class="container">      
+        <app-product-list [category]='selectedproduct'></app-product-list>      
+    </div>
+
+</div>
+
+
+

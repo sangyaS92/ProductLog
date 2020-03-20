@@ -1,0 +1,15 @@
+<div *ngIf="product.isSale">
+    <img class="logo" height="20" width="80"src="assets/sale.png" alt="Card image cap">
+</div>
+<img class="card-img-top" src="assets/images/{{product.productImage}}" alt="Card image cap">
+<div class="card-body">
+  
+  <p class="card-text-left">
+      {{product.productName}}
+      </p>
+      <p class="card-text-right">
+        {{product.price}}
+      </p>
+  
+  
+</div>
