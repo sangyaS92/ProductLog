@@ -1,8 +1,18 @@
 # ProductApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.It displays a product log.
 
 ## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Installation Steps
+        Clone the repository to your desktop.
+        Download and install Angular cli
+        Download and install Node.js
+        Run npm install.
+        Run npm start.
+        The browser will open and application will run.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
