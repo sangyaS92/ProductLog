@@ -9,19 +9,19 @@ import { ProductserviceService } from '../services/productservice.service';
 })
 export class ProductHomeComponent implements OnInit {
   private categorylist;
+  private apptitle = 'Product Log';
   private element;
+  private selecttitle = 'All';
   private selectedproduct = 'All';
   constructor(public _httpproductservice:ProductserviceService) { }
 
-  ngOnInit() {
-    
+  ngOnInit() {    
     this._httpproductservice.getProductList().subscribe((data :Product[])=> {
       this.categorylist = new Set(data.map(a =>  a.type));
       console.log(this.categorylist);
     },
     error => console.log('Server error'),
-  );
-  
+  );  
   } 
 
 public get categorylistGet() : string[] {
@@ -32,12 +32,8 @@ public get httpgetservice(){
   return this._httpproductservice;
 }
 
- 
-  valueSelected(selectedvalue:string){
-    console.log(selectedvalue);
-     this.selectedproduct = selectedvalue;
-    //this._httpproductservice.sendFilterProduct(selectedvalue);
-    
+valueSelected(selectedvalue:string){    
+     this.selectedproduct = selectedvalue;    
   }
 
 }
